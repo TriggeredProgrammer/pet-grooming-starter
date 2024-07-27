@@ -1,0 +1,392 @@
+.footerContainer {
+    width: 100%;
+    background-color: #7B5BFB;
+    margin: auto 0px !important;
+}
+
+.contentLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px 25px !important;
+    padding-left: 50px !important;
+}
+
+.footerLogoDiv{
+    margin:20px 0;
+    width: 40%;
+}
+.footerLinksDiv{
+    margin:20px 0;
+    width: 20%;
+}
+
+.footerInstagram{
+    margin: 20px 0;
+    width: 20%;
+    
+}
+
+
+
+.footerContactUs {
+    margin: 20px 0;
+    width: 20%;
+}
+
+.footerContactUs a {
+    display: block; /* Makes each link occupy full width */
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Inherits color from parent */
+}
+
+.contact-data {
+    display: flex;
+    align-items: center; /* Centers items vertically */
+    margin: 5px 0; /* Space between each contact data */
+}
+
+.contact-data img {
+    margin-right: 8px; /* Space between image and text */
+}
+
+
+.instagram-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 160px;
+    width: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    gap: 10px; 
+  }
+  
+  .grid-photo {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    object-fit: cover;
+
+  }
+
+.FDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fD1Text {
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+}
+
+.subscribeBtn {
+    background-color: #7B5BFB !important;
+    border-radius: 40px;
+    color: #fff;
+    margin: 10px 0px;
+    margin-right: auto;
+    padding: 5px 20px;
+}
+
+.emailInput {
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.10) !important;
+    color: #fff;
+    padding: 5px 20px;
+}
+
+.fdTitle {
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: DM Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.linkDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-link {
+    color: #FFF;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    text-decoration: none;
+}
+
+.FDivImages {
+    display: flex;
+    flex-direction: row;
+}
+
+.footerTop{
+    background-color: #15092E;
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-around !important;
+    padding: 30px;
+    /* align-items: center !important; */
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.logofooter{
+    width: 30%;
+}
+  
+
+.footerBottom {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    padding: 2px 30px;
+    align-items: center !important;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: #F29A4C;
+}
+
+/* Master Input Text */
+.masterInputText {
+    width: 70%;
+    justify-content: space-between;
+    border-radius: 40px;
+    background-color: #27203a;
+ 
+  }
+
+  .link-Div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem!important;
+    margin-bottom: 0.5rem!important;
+}
+.footerLink{
+    color: #fff;
+    text-decoration: none;
+    font-family: Poppins;
+    font-size: 14px !important;
+}
+
+.footer-link:hover{
+    text-decoration: underline;
+}
+
+.contact-head{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.contact-data{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 14px;
+    text-align: start;
+    margin-top: 0.5rem!important;
+    margin-bottom: 0.5rem!important;
+}
+
+  .newsletterDiv{
+    width: 60%;
+  }
+
+  .newsletterDescription{
+    color: white;
+  }
+  
+  .successMessage{
+    font-size: 13px;
+    color:greenyellow;
+  }
+
+  .errorMessage{
+    font-size:13px;
+    color:red;
+  }
+ 
+  .inputContainer {
+    display: flex;
+    position: relative;
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
+    background-color: transparent !important;
+  }
+  
+  
+  .inputField {
+    border-radius: 40px;
+    padding: 10px 30px;
+    color: #15092e;
+    background-color: transparent !important;
+    border: none;
+    color: white;
+    outline: none;
+
+  }
+  
+  .inputField::placeholder {
+    color: white; /* Set the placeholder text color to white */
+  }
+
+  .masterInputText .inputField {
+  background-color: #27203a;
+  border: none;
+  outline: none; 
+  width: 60%;
+}
+
+  .submitButton {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    padding: 10px 24px;
+    background: #7B5BFB;
+    border-radius: 40px;
+    cursor: pointer;
+    right: 0;
+    top: 0;
+    border:none;
+    position: absolute;
+  }
+  
+  .submitButton span {
+    font-family: 'Poppins';
+    font-size: 15px;
+    font-weight: 700;
+    color: #FFFFFF;
+  }
+  
+  
+
+.footerBottomTxt {
+    color: #FFF;
+    /* font-family: DM Sans; */
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    margin: 0 !important;
+}
+
+.socialDiv {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.f4Img {
+    border-radius: 21px;
+}
+
+@media(max-width : 768px) {
+    .instagram-grid{
+        margin-top: 20px;
+        height: 180px;
+        width: 180px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .grid-photo{
+        width: 100%;
+        height: 100%;
+    }
+    .footerBottom {
+        display: block;
+        text-align: center;
+    }
+
+    .footerTop{
+        display: block;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footerTextDiv {
+        justify-content: center;
+    }
+
+    .masterInputText {
+        width: 100%;
+      }
+    
+    .newsletterDiv{
+        width: 100%;
+    }
+
+    .logofooter{
+        width: 50%;
+        filter: "brightness(0) invert(1)";
+    }
+    .footerLogoDiv{
+        margin:20px 0;
+        width: 100%;
+ 
+    }
+    .footerLinksDiv{
+        margin:20px 0;
+        width: 100%;
+    }
+
+    .footerInstagram{
+        margin: 20px 0;
+        width: 100%;
+    }
+
+    
+
+    .footerContactUs{
+        margin:20px 0;
+        width: 100%;
+    }
+
+    .link-Div{
+        margin-top: 1rem!important;
+        margin-bottom: 1rem!important;
+    }
+    .contact-footer{
+        margin-top: 1rem!important;
+        margin-bottom: 1rem!important;
+    }
+}
+
+@media(max-width:435px){
+    .fbt-txt{
+        display: block;
+    }
+
+    .footerBottomTxt{
+        line-height: 24px !important;
+    }
+}
+
+
+
+/* this is the new css for shown data into row instead of column */
+

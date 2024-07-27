@@ -1,22 +1,36 @@
 import React from "react";
-import Hero from "./components/Hero";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
+import Hero from "./components/Hero";
 import Prices from "./components/Prices";
-import Footer from "./components/Footer";
-import Appoinment from "./components/Appointment";
+import Footer from "./components/Footer/Footer";
+import Categories from "./components/Categories";
+import Main from "./pages/Main";
+import HomePage from './pages/HomePage';
+import CategoryPage from './pages/CategoryPage';
+import BlogInfo from './components/BlogsInfo';
+import BlogListScreen from "./pages/Blogs/BlogListScreen";
+import BlogScreen from "./pages/Blogs/BlogScreen";
 
-const App = () => {
+export default function App() {
   return (
-    <div className="w-full max-w-[1440px] mx-auto bg-orange-quaternary relative">
-      <Header />
-      <Hero />
-      {/* <Appoinment/> */}
-
-      <Prices/>
-      <Footer/>
-      {/* <div className="h-[2000px]"></div> */}
-    </div>
+        // <BrowserRouter>
+    <div className="App">
+        <Header />
+        <Hero />
+        <Prices />
+        <Categories />
+        <BlogListScreen/>
+        <BlogScreen/>
+        {/* <Routes> */}
+          {/* <Route path="/" element={<HomePage />} /> */}
+          {/* <Route path="/grooming-blogs" element={<BlogInfo />} /> */}
+          {/* <Route path="/category/:slug" element={<CategoryPage />} /> */}
+          {/* Other routes can be added here */}
+          {/* <Route path="/*" element={<Main />} /> */}
+        {/* </Routes> */}
+        <Footer />
+      </div>
   );
-};
+}
 
-export default App;

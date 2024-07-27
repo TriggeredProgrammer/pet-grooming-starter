@@ -1,0 +1,27 @@
+.pv-title{
+    color: #6342A8;
+    font-size: 28px;
+
+}
+
+.rte b{
+    color: #6342A8 !important;
+}
+
+.rte p{
+    line-height: 28px;
+    color: #656565;
+    font-family: Poppins;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+}
+
+.rte li{
+    line-height: 28px;
+    color: #656565;
+    font-family: Poppins;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+}

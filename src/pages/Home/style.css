@@ -1,0 +1,2357 @@
+/* Carousel - CSS */
+
+.leastItemCard {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	align-items: center;
+}
+
+@media(min-width : 800px) {
+
+	/* .banner-img {
+		height: 91vh;
+		object-fit: fill;
+	} */
+	.video-container {
+		height: 85vh;
+		overflow: hidden;
+	}
+
+	.video-container video {
+		/* width: 100%; */
+		height: 85vh;
+		object-fit: cover;
+	}
+}
+
+/*  Home page booking button css*/
+
+.cover-photo-btn {
+	background-color: #7B5BFB;
+	padding: 10px 45px 10px 45px;
+	border-radius: 100px;
+	text-align: center;
+	max-width: 68%;
+	min-width: 24%;
+	font-size: 26px;
+	font-weight: 600;
+	color: white;
+	border: 2px solid #FFFFFF;
+	cursor: pointer;
+	position: absolute;
+	bottom: 5%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.cityGroomingWrapper {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	/* margin-top: 30px; */
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.stickyBookAppointmentContainer {
+	display: none;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	padding: 7px 20px;
+	background-color: #FFFFFF;
+	z-index: 1000;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	/* Optional: add a shadow for better visibility */
+}
+
+.whatsapp-icon-sticky {
+	width: 40px;
+	height: 40px;
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+	z-index: 999;
+	background-color: transparent;
+}
+
+.stickyBookWhatsapp {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	gap: 10px;
+}
+
+.whatsapp-icon-sticky img {
+	width: 40px;
+	height: 40px;
+}
+
+.stickyBookAppointmentBtn {
+	width: 100%;
+	background-color: #7B5BFB;
+	color: #FFF;
+	text-align: center;
+	padding: 10px 0;
+	font-weight: bold;
+	font-size: 14px;
+	border: none;
+	cursor: pointer;
+	border-radius: 50px;
+	/* Optional: add rounded corners */
+}
+
+.stickyWhatsappButton {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	width: 100%;
+	background-color: #2A9829;
+	color: #FFF;
+	text-align: center;
+	padding: 10px 0;
+	font-weight: bold;
+	font-size: 14px;
+	border: none;
+	cursor: pointer;
+	border-radius: 50px;
+	/* Optional: add rounded corners */
+}
+
+.stickyWhatsappButton img {
+	width: 20px;
+	height: 20px;
+}
+
+.GrommingNum {
+	font-size: 30px;
+	font-weight: bold;
+	color: #7B5BFB;
+}
+
+.whychooesItemLink {
+	cursor: pointer;
+	text-decoration: none;
+	color: #000;
+	font-family: Poppins;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 22px;
+}
+
+.WC-row {
+	display: flex;
+	flex-direction: row;
+	margin-top: 12px !important;
+	margin-bottom: 12px !important;
+}
+
+.WR-Top {
+	color: #6342A8;
+	font-family: Poppins;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 22px;
+}
+
+.WR-Bottom {
+	color: #000;
+	font-family: Poppins;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 22px;
+}
+
+
+
+.bookingPlansWrapper {
+	/* padding-top: 1em;
+	padding-bottom: 1em; */
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.splash-celebrate {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	/* Ensure the image is behind the text */
+
+}
+
+.line-celebrate {
+	position: absolute;
+	bottom: 0;
+	left: 55%;
+}
+
+.dog-celebrate {
+	position: absolute;
+	bottom: 0;
+	right: 1%;
+}
+
+.cat-celebrate {
+	position: absolute;
+	bottom: 0;
+	left: 33%;
+}
+
+.celebrating-container {
+
+	position: relative;
+	background-color: #7B5BFB;
+	z-index: -2;
+	padding: 60px;
+}
+
+.celebrating-text {
+	color: #F7BD40;
+	font-size: 50px;
+	font-weight: 600;
+}
+
+.success-text {
+	color: white;
+	font-size: 50px;
+	font-weight: 600;
+}
+
+
+.stat-celebrate {
+	text-align: center;
+}
+
+.stat-celebrate h1 {
+	color: #fff;
+	font-size: 40px;
+	font-weight: 600;
+}
+
+.stat-celebrate span {
+	color: #321274;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.success-divider {
+	background-color: white;
+
+	width: 100%;
+}
+
+@media (min-width: 769px) {
+	.cityGroomingWrapper {
+
+		width: 90%;
+
+
+	}
+
+	.shampoImg {
+		width: 100%;
+		height: 100%;
+	}
+
+	.success-divider {
+		width: 1px;
+		height: 100px;
+
+	}
+
+	.celebrating-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+	}
+}
+
+
+
+/* Vertical divider for mobile */
+@media (max-width: 768px) {
+
+	.cover-photo-btn {
+		bottom: 5%;
+		left: 50%;
+		transform: translateX(-50%);
+		font-size: 29px;
+		width: 100%;
+	}
+
+	.success-divider {
+		height: 1px;
+		margin: 20px auto;
+	}
+
+	.celebrating-container {
+		text-align: center;
+		padding: 20px;
+		height: 700px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+	}
+
+	.cat-celebrate {
+		left: 0px;
+	}
+
+
+	.line-celebrate {
+		width: 1px;
+		height: 100px;
+		top: 40%;
+		left: -10%;
+		transform: rotate(90deg) translateY(-50%);
+	}
+}
+
+
+
+.cover-photo-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	position: relative;
+}
+
+.cover-photo {
+	width: 100%;
+	height: 600px;
+	object-fit: cover;
+}
+
+.cover-heading-text {
+	margin-top: 2%;
+}
+
+.cover-photo-text-container {
+	width: 100%;
+	position: absolute;
+	padding-left: 5%;
+	top: 0;
+	height: 100%;
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+
+/* pet grooming text css */
+
+.cover-photo-text-single-city {
+	color: white;
+	font-size: 65px;
+	font-weight: 600;
+	font-family: 'Georgia';
+
+	/* font-family: 'Alegreya', serif; */
+}
+.parent-container {
+    position: relative;
+    /* width: 200px;
+    height: 200px;  */
+     /* Example background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cover-photo-text-city {
+	color: white;
+	white-space: pre-line;
+	font-size: 16px;
+	font-weight: 600;
+	display: block;
+	margin-top: 10px;
+	font-family: 'Alegreya', serif;
+}
+
+.cover-photo-text {
+	color: #FFFFFF;
+	font-size: 80px;
+	font-weight: bold;
+	font-family: 'Alegreya', serif;
+	line-height: 0px;
+}
+
+
+/* premium at css */
+.cover-photo-text-cur {
+	color: #FFFFFF;
+	font-size: 80px;
+	font-weight: bold;
+	/* font-family: 'Georgia'; */
+	font-family: 'Georgia';
+	line-height: normal;
+}
+
+
+
+/* General Styles */
+.why-choose-wrapper-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	position: relative;
+
+}
+
+.shampoo-container-splash {
+	position: absolute;
+	z-index: -1;
+	right: 0;
+}
+
+.orangeSplash {
+	width: 20vw;
+}
+
+.why-choose-wrapper {
+	display: flex;
+	flex-direction: column;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+
+}
+
+
+
+.shampoo-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 0;
+	padding: 20px;
+	text-align: center;
+	width: 100%;
+}
+
+.shampoo-container-pc {
+	display: none;
+}
+
+
+
+/* Carousel - CSS over */
+
+/* HowWorks - CSS */
+.sec2Heading {
+	color: #321274;
+	font-family: Poppins;
+	font-size: 25px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: normal;
+	text-align: center;
+}
+
+.howDiv {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.howWorksContainer {
+
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.workcrd {
+	background-color: #FFFFFF !important;
+	display: inline-flex !important;
+	border-radius: 10px !important;
+	width: 100%;
+	box-shadow: 0px 0px 54px 0px #0000001A;
+
+}
+
+.sec2CrdTitle {
+	color: #7B5BFB;
+	text-align: left;
+	font-family: Poppins;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 16px;
+}
+
+
+
+.planPrice {
+	color: #1F1F1F;
+	font-family: Poppins;
+	font-size: 23.625px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 20.594px;
+	margin: 0;
+}
+
+.sec2CrdTxt {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 20px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: #3B3B3B;
+}
+
+
+.WTxtDiv {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.WimgDiv {
+	background-color: #FAF8FF !important;
+}
+
+.rowDiv {
+	justify-content: space-between;
+}
+
+.leftTextDiv {
+	margin-left: 2%;
+}
+
+.textDiv {
+	width: 80%;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	padding: 12px 0px;
+}
+
+.img1,
+.img4 {
+	margin-top: auto;
+}
+
+.img2 {
+	margin-top: auto;
+}
+
+@media(min-width : 800px) {
+	.sec2CrdTitle {
+		font-size: 19px;
+	}
+
+	.sec2CrdTxt {
+		font-size: 18px;
+
+	}
+}
+
+
+
+
+@media(max-width : 991px) {
+	.textDiv {
+		padding: 24px 0px;
+	}
+
+	.workcrd {
+		min-height: 140px;
+	}
+}
+
+/* HowWorks - CSS over */
+
+/* SelectCity - CSS */
+.sec2Headingcity {
+
+	font-size: 16px;
+	font-weight: 700;
+	line-height: normal;
+	letter-spacing: 0px;
+	text-align: center;
+}
+
+.mainBookingContainer {
+	position: relative;
+}
+
+.cityMain {
+	background-image: url("../../assets/icons/plans-doodle.svg");
+	background-repeat: repeat;
+	background-size: contain;
+	background-color: #FFBD5C;
+	width: 100%;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+
+.selectCityPart {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.cityDropdown1 {
+	border-radius: 5px;
+	border: none;
+	padding: 8px 20px 8px 20px;
+	margin: 5px 15px;
+	width: 50%;
+	min-width: 180px;
+	max-width: 280px;
+	background-color: #fff !important;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	color: #7B5BFB;
+	appearance: none;
+	background-image: url('../../assets/icons/location-icon.svg');
+	background-repeat: no-repeat;
+	background-position: right 10px top 50%;
+	background-size: 20px auto;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.cityDropdown {
+	border-radius: 5px;
+	border: none;
+	padding: 7px;
+	margin: 0px auto;
+	width: 100%;
+}
+
+.selectPetDiv {
+	background-color: #fff;
+	border-radius: 15px;
+	/* width: 100%; */
+	/* max-width: 300px; */
+	padding: 3px;
+	display: flex;
+}
+
+.selectPetDivAdd {
+	background-color: #fff;
+	margin: 15px auto;
+	border-radius: 15px;
+	/* width: 100%; */
+	/* max-width: 300px; */
+	padding: 3px;
+	display: flex;
+}
+
+.petBtn {
+	border-radius: 15px;
+	border: none;
+	background-color: #fff;
+	color: #000;
+	text-align: center;
+	font-family: Poppins;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 18px;
+	padding: 6px 20px;
+	/* padding: 12px 0px; */
+	/* width: 50%; */
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+@media(max-width : 500px) {
+	.petBtn {
+		padding: 5px 14px;
+	}
+
+	.cover-photo-text-city {
+		font-size: 14px;
+	}
+
+	.cover-photo-btn {
+		font-size: 21px;
+		font-weight: bold;
+		text-align: center;
+	}
+}
+
+/* -------------------------- */
+@media(max-width:400px) {
+	.cover-photo-btn {
+		font-size: 20px;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	.cover-photo-text-city {
+		font-size: 13px;
+	}
+
+}
+
+
+
+.petBtnActive {
+	background-color: #7B5BFB !important;
+	color: #fff !important;
+}
+
+.dearpetGroomPlan {
+	margin: 0;
+}
+
+.citytext {
+	color: #3B3B3B;
+	font-family: Poppins;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	margin: 0 !important;
+}
+
+.muteInput {
+	pointer-events: none;
+	background-color: #d3d9df !important;
+	border: none !important;
+}
+
+.City-Actions {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	padding: 2px 10%;
+}
+
+.add-div {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	/* flex-wrap: wrap; */
+}
+
+.imgCursor {
+	cursor: pointer;
+	height: 16px;
+	width: 16px;
+}
+
+.wHalfc {
+	width: 50%;
+	margin: 0px 2px;
+}
+
+@media(max-width: 786px) {
+	.dearpetGroomPlan {
+		width: 90%;
+	}
+
+	.why-text-container {
+		padding: 0px 30px;
+	}
+
+	.add-div {
+		flex-wrap: wrap;
+	}
+
+	.wHalfc {
+		width: 100%;
+		margin: 0px 2px;
+	}
+
+	.pawHeadingMb {
+		display: block;
+	}
+
+	.pawHeadingPc {
+		display: none;
+
+	}
+}
+
+.city-botom-txt {
+	display: flex;
+	/* margin: 5px auto; */
+	justify-content: center;
+	align-items: center !important;
+}
+
+/* SelectCity - CSS over */
+
+/* Booing Plans */
+
+
+
+.bookingCardContainer {
+	width: 100%;
+
+}
+
+.sec4Heading {
+	color: #6342A8;
+	font-family: 'Poppins', sans-serif !important;
+	font-size: 30px;
+	font-style: normal;
+	font-weight: bolder !important;
+	line-height: normal;
+}
+
+.dearPetPlans {
+	color: #373737;
+	font-family: 'Poppins', sans-serif !important;
+	font-size: 27px;
+	font-style: normal;
+	/* font-weight: bolder !important; */
+	font-weight: 900 !important;
+	line-height: normal;
+}
+
+.topSeller {
+	position: absolute;
+	z-index: 100;
+	top: -15px;
+	border: 1px solid white;
+	left: 9%;
+	background-color: #E84F66;
+	border-radius: 30px;
+	font-weight: 500;
+	padding: 1px 10px;
+	font-size: 17px;
+	color: white;
+}
+
+.palnHeader {
+	text-decoration: none;
+	border-radius: 10px;
+	border: 1px solid #7B5BFB;
+	background: #FFF;
+	/* width: 49% !important; */
+	padding: 0;
+	margin: 0;
+}
+
+.palnMainDiv {
+	border-radius: 10px;
+	border: 1px solid #7B5BFB;
+	background: #FFF;
+	overflow: hidden;
+}
+
+.singlePawIcons {
+	position: absolute;
+	right: 20%;
+	top: 5%;
+}
+
+.planOffDiv {
+	position: relative;
+	display: flex;
+	padding: 15px 20px;
+	justify-content: space-between;
+	align-items: center;
+	/* border-radius: 10px !important; */
+	background-color: #7B5BFB;
+}
+
+/* .collapsed .planOffDiv {
+	background-color: #FFBD5C !important;
+} */
+
+/* .planHeading {
+	color: #1F1F1F;
+	font-family: Poppins;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 16px;
+} */
+
+.planHeading {
+	color: #fff;
+	font-family: Poppins;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: 31px;
+}
+
+/* .collapsed .planOffDiv .planHeading {
+	color: #1F1F1F;
+	font-family: Poppins;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 16px;
+} */
+
+
+.planReview {
+	color: #FFF;
+	font-family: Poppins;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+/* .planHeading,
+.planReview {
+	margin: 5px 0px;
+} */
+
+/* {This css is for phone view} */
+.planDescList {
+	text-align: left;
+	color: #323232;
+	font-family: Poppins;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	letter-spacing: 0.24px;
+	padding-left: 20px;
+	list-style-type: none;
+}
+
+.planfooter {
+	display: flex;
+	flex-direction: column;
+	padding: 15px 30px;
+	align-items: center;
+	border-bottom-left-radius: 10px !important;
+	border-bottom-right-radius: 10px !important;
+}
+
+/* .planPrice {
+	color: #1F1F1F;
+	font-family: Poppins;
+	font-size: 23.625px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 20.594px;
+	margin: 0;
+} */
+
+.dividerBelow {
+	margin: 10px 0px 10px 0px;
+	border: none;
+	border-top: 2px solid #F0F0F0;
+}
+
+.planBookNowBtn {
+	background-color: #7B5BFB;
+	padding: 10px 10px 10px 10px;
+	color: #fff;
+	border: none;
+	width: 100%;
+	border-radius: 40px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.planBookNowBtnTop {
+	background-color: #7B5BFB;
+	padding: 10px 30px 10px 30px;
+	color: #fff;
+	border: none;
+	border-radius: 40px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.brb {
+	border-bottom-left-radius: 10px !important;
+	border-bottom-right-radius: 10px !important;
+}
+
+.bookingReview {
+	display: flex;
+	flex-direction: row;
+	align-items: center !important;
+}
+
+.booking-right-Price {
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+	justify-content: space-between;
+	width: auto;
+	/* transform: rotate(180deg); */
+	/* transition: transform 0.3s ease; */
+}
+
+
+.planHeadPrice {
+	display: none;
+}
+
+
+.collapsed .planOffDiv .planHeadPrice {
+	display: flex;
+	color: #1F1F1F;
+	font-family: Poppins;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+
+@media(max-width:375px) {
+	.planHeadPrice {
+		font-size: 15px;
+	}
+
+	.planOffDiv {
+		padding: 15px 17px !important;
+	}
+
+	.planfooter {
+		padding: 15px 17px !important;
+	}
+
+	.planDescList {
+		padding-left: 30px !important;
+	}
+}
+
+.planMainRow {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+	.img1,
+	.img4 {
+		margin-top: auto;
+	}
+
+	.howWorksContainer {
+		width: 100%
+	}
+
+	.cityDropdown1 {
+		min-width: 200px;
+		max-width: 300px;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.cityGroomingWrapper {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+}
+
+
+@media(max-width : 991px) {
+	.workImg {
+		width: 130px;
+	}
+
+	.planMainRow {
+		display: block !important;
+		padding-left: 10px !important;
+		padding-right: 10px !important;
+	}
+
+	.palnHeader {
+		width: 100% !important;
+	}
+}
+
+
+
+
+@media(min-width: 991px) {
+
+	.sec2CrdTitle {
+		font-size: 22px;
+	}
+
+
+
+	.cover-photo-btn {
+		font-size: 34px;
+	}
+
+	.planBookNowBtn {
+		font-size: 18px;
+	}
+
+	.why-text-container {
+		padding: 0px 30px;
+	}
+
+	.whychooesItemLink {
+
+		font-size: 1em;
+
+		line-height: normal;
+	}
+
+	.WC-row {
+		display: flex;
+		height: auto;
+		flex-direction: row;
+	}
+
+	.WR-Top {
+		color: #6342A8;
+		font-family: Poppins;
+		font-size: 2em;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+	}
+
+	.WR-Bottom {
+		color: #000;
+		font-family: Poppins;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
+
+	.planReview {
+		font-size: 14px;
+	}
+
+	/* {This css is for laptop and desktop view} */
+
+	.planDescList {
+		text-align: left;
+		color: #323232;
+		font-family: Poppins;
+		font-size: 1em;
+		font-style: normal;
+		font-weight: 400;
+		letter-spacing: 0.24px;
+		line-height: 25px;
+		padding-left: 20px;
+		list-style-type: none;
+	}
+
+	/* this is for phone  */
+	.leastItemCardPhone {
+		display: flex;
+		flex-direction: row;
+		gap: 5px;
+		white-space: nowrap;
+		/* Ensure items stay on one line */
+	}
+
+	
+
+
+	/* right check svg css */
+	.custom-icon {
+		width: 20px;
+		margin-right: 0.5rem;
+		/* Similar to .me-2 */
+		font-size: 1.875rem;
+		/* Similar to .text-3xl */
+	}
+
+	.bookingCardContainer {
+		width: 90%;
+
+	}
+
+	.cover-photo-text-city {
+		font-size: 30px;
+		margin-top: 50px
+	}
+
+	/* .cover-photo-btn {
+		top: 80%;
+	} */
+
+
+	.cityGroomingWrapper {
+		width: 90%;
+	}
+
+	.cityMain {
+		padding-top: 2em;
+		padding-bottom: 2em;
+	}
+}
+
+@media(min-width:1200px) {
+	.cover-photo-btn {
+		font-size: 36px;
+	}
+
+	.cityGroomingWrapper {
+		width: 75%;
+	}
+}
+
+
+
+
+/* Booking Plans - CSS over */
+
+/* Why Chooes DearPet - CSS */
+
+.whyChooesHeading {
+	color: #6342A8;
+	font-family: Poppins;
+	font-size: 50px;
+	margin-top: 20px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 55px;
+	text-align: center;
+}
+
+
+
+
+
+
+
+/* Why Chooes DearPet - CSS over */
+
+
+/* VideoSLider - CSS */
+
+.sec5SubHeading {
+	margin: 0;
+	color: #6342A8;
+	font-family: Poppins;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 17px;
+}
+
+.pawHeadingMb {
+	display: none;
+}
+
+.pawHeadingPc {
+	display: block;
+	line-height: normal;
+	color: #000;
+}
+
+.finest {
+	color: #000 !important;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 25px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 17px;
+}
+
+.myvideo {
+	width: 230px;
+	/* width: 131px; */
+	/* height: 225px; */
+	border-radius: 10px;
+	margin: auto;
+	display: block;
+}
+
+.swiper-pagination-bullet {
+	opacity: var(--swiper-pagination-bullet-opacity, 1);
+	background: #B6A6E0 !important;
+}
+
+.swiper-pagination-bullet-active {
+	opacity: var(--swiper-pagination-bullet-opacity, 1);
+	background: #7B5BFB !important;
+}
+
+.myVideoSlider .swiper .swiper-wrapper .swiper-slide {
+	width: 230px !important;
+	/* width: 131px !important; */
+
+}
+
+.myVideoSlider .swiper .swiper-wrapper {
+	height: 450px;
+	/* height: 265px; */
+}
+
+/* VideoSlider - CSS over */
+
+/* Review - CSS */
+
+.reviewCard {
+	display: flex;
+	overflow: visible;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	border-radius: 10px !important;
+	border: 1px solid #F5F5F5 !important;
+	background: #fff !important;
+}
+
+.reviewCardBody {
+	display: flex;
+	margin-top: 230px;
+	overflow: visible;
+	padding: 20px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.reviewMsg {
+	color: #000;
+	text-align: center;
+	font-family: Poppins;
+	font-size: 14px;
+	font-weight: 400;
+	/* line-height: 28px; */
+	margin: 8px 0px;
+	line-height: 22px;
+}
+
+.reviewImg {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+}
+
+.review-bottom {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 100%;
+}
+
+.reviewDetails {
+	margin-left: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.rnm {
+	color: #1F1F1F;
+	font-family: Poppins;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 16px;
+}
+
+.rdt {
+	color: #656565;
+	font-family: Poppins;
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 16px;
+}
+
+.reviewImgBottom {
+	border-radius: 10px;
+	width: 90%;
+	height: 240px;
+	object-fit: cover;
+	position: absolute;
+	top: -20px;
+	z-index: 2;
+}
+
+/* Review - CSS over */
+
+/* Gallery - CSS */
+.gallery-heading {
+	color: #6342A8;
+	font-family: Poppins;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+
+.galleryImgBody {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+}
+
+.beforeimg {
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.afterimg {
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.gallryImg {
+	width: 50%;
+}
+
+.text-overlay {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+	text-align: center;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.overlay-text {
+	margin: 0;
+}
+
+.txtbefore {
+	bottom: 0% !important;
+	left: 50px !important;
+}
+
+.txtafter {
+	bottom: 0% !important;
+	right: 0% !important;
+}
+
+@media(max-width: 768px) {
+
+	.sec4Heading {
+		padding: 0 10%;
+		font-size: 25px;
+		color: #000;
+	}
+
+	.dearPetPlans {
+		padding: 0 5%;
+		font-size: 26px;
+		color: #000;
+	}
+
+	.cityGroomingWrapper {
+		display: flex;
+		flex-direction: column;
+		/* align-items: center; */
+		gap: 10px;
+		justify-content: space-between;
+	}
+
+
+	.cover-photo-text-single-city {
+		font-size: 40px;
+	}
+
+
+	.dropCardIcon {
+		display: none;
+	}
+
+	.collapsed .dropCardIcon {
+		display: block;
+		position: absolute;
+		z-index: 2000;
+		top: 5px;
+		right: 0px;
+	}
+
+	.palnHeader {
+		position: relative;
+		border-radius: 20px;
+		overflow: hidden;
+	}
+
+
+	.palnMainDiv {
+		border-radius: 0px;
+		overflow: hidden;
+		border: 0;
+
+	}
+
+	.palnMainDiv.collapsed {
+		cursor: pointer;
+	}
+
+	.palnMainDiv.collapsed+.collapse {
+		transition: height 0.3s ease;
+	}
+
+	.planfooter {
+		background-color: #fff;
+	}
+
+	.collapsed .planfooter {
+		background-color: #7B5BFB;
+	}
+
+
+	.collapse {
+		transition: all 0.3s ease;
+		overflow: hidden;
+	}
+
+	.collapse.show {
+		display: block;
+	}
+
+	.collapse:not(.show) {
+		display: none;
+	}
+
+	.planOffDiv {
+		padding: 10px 20px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.bookingReview {
+		display: flex;
+		align-items: center;
+	}
+
+
+
+	.dividerBelowM {
+
+		border: none;
+		border-top: 2px solid #F0F0F0;
+	}
+
+
+
+	.orangeSplash {
+		width: 40vw;
+	}
+
+	.collapsed .dividerBelowM {
+		display: none;
+	}
+
+	.planBookNowBtn {
+		background-color: #7B5BFB;
+		padding: 10px 30px 10px 30px;
+		color: #fff;
+		border: none;
+		border-radius: 40px;
+		font-size: 19px;
+		font-weight: bold;
+	}
+
+	.collapsed .planBookNowBtn {
+		background-color: #fff;
+		color: #7B5BFB;
+	}
+
+	.planBookNowBtnTop {
+		display: none;
+	}
+
+	.collapsed .planBookNowBtnTop {
+		display: block;
+		background-color: #7B5BFB;
+		padding: 5px 15px 5px 15px;
+		color: #fff;
+		border: none;
+		border-radius: 40px;
+		font-size: 14px;
+		font-weight: bold;
+	}
+
+	.cover-photo-text-cur {
+		font-size: 40px;
+	}
+
+	.cover-photo-text {
+		font-size: 40px;
+	}
+
+	.cover-photo-text-container {
+		width: 100%;
+		background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+	}
+
+	.planOffDiv {
+		padding-top: 20px;
+		border-bottom: 0;
+	}
+
+
+	.cityMain {
+		background-image: url("../../assets/icons/plans-doodle.svg");
+		background-repeat: repeat;
+		background-size: auto;
+		padding-top: 2em;
+		padding-bottom: 2em;
+	}
+
+	.gallryImg {
+		height: auto !important;
+	}
+
+	.cover-photo-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+
+	.cover-photo {
+		width: 100%;
+		height: 450px;
+		border-radius: 0px;
+		object-fit: cover;
+	}
+
+}
+
+
+
+@media(max-width:500px) {
+	.cover-photo {
+		height: 400px;
+
+	}
+
+	.cover-photo-text-cur {
+		font-size: 30px;
+	}
+
+	.cover-photo-text {
+		font-size: 30px;
+	}
+
+	.dearPetPlans {
+		font-size: 21px;
+		width: 100%;
+	}
+}
+
+
+/* Gallery - CSS over */
+
+/* Star Groomer - CSS */
+
+
+
+
+
+/* style.css */
+
+/* Common styles */
+.starGroomer-Container {
+	background-image: url("../../assets/images/star-back.svg");
+	background-repeat: repeat;
+	background-size: contain;
+	background-color: #FFBD5C;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 30px 30px 30px 120px;
+}
+
+.starGrommer-title {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.rowCard {
+	width: 100%;
+
+}
+
+.horizontal-scroll {
+	user-select: none;
+	display: flex;
+	overflow-x: auto;
+	white-space: nowrap;
+	padding: 10px;
+	cursor: grab;
+	-ms-overflow-style: none;
+	/* Internet Explorer 10+ */
+	scrollbar-width: none;
+	/* Firefox */
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+	display: none;
+	/* Safari and Chrome */
+}
+
+.horizontal-scroll:active {
+	cursor: grabbing;
+}
+
+.grommerCard {
+	display: flex;
+	max-width: 600px;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	min-width: 400px;
+	height: 200px;
+	background-color: #fff;
+	border-radius: 15px;
+	text-align: left;
+	overflow: hidden;
+	/* margin: 10px 0; */
+	padding: 20px;
+	/* transition: box-shadow 0.3s ease-in-out; */
+}
+
+.groomerCardBody {
+	display: flex;
+	flex-direction: row;
+	border-radius: 15px;
+	align-items: center;
+}
+
+.grommerCard:hover {
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.groomerImg {
+	width: 170px;
+	height: 170px;
+	object-fit: cover;
+	margin-right: 15px;
+	border-radius: 15px;
+}
+
+
+
+.GrommerNm {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.g-review {
+	color: #888;
+}
+
+
+
+.gromerBottomLine {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+
+
+.gmTxt {
+	margin: 0;
+	color: #7B5BFB;
+}
+
+
+
+
+
+/* Mobile view */
+@media (max-width: 768px) {
+
+	.stickyBookAppointmentContainer {
+		display: block;
+	}
+
+	.cover-photo-text-city {
+		display: flex;
+		flex-wrap: wrap;
+		list-style: none;
+		padding: 0;
+		gap: 5px;
+	}
+
+
+
+	.rowCard {
+		display: flex;
+		flex-direction: column;
+
+	}
+
+	.grommerCard {
+		margin-top: 10px;
+		min-width: 200px;
+	}
+
+	.starGroomer-Container {
+		padding: 20px;
+
+	}
+
+	.starGrommer-title {
+		text-align: center;
+	}
+
+	.GrommingNum {
+		font-size: 22px;
+	}
+}
+
+@media(max-width: 450px) {
+	.gmTxt {
+		font-size: 12px;
+	}
+
+	.groomerImg {
+		width: 120px;
+		height: 120px;
+	}
+
+	.GrommerNm {
+		font-size: 20px;
+		font-weight: bold;
+	}
+
+	.g-review {
+		font-size: 12px;
+	}
+
+	.GrommingNum {
+		font-size: 19px;
+	}
+
+	.grommerCard {
+		padding: 10px 20px;
+		height: 150px;
+	}
+}
+
+/* Desktop view */
+@media (min-width: 769px) {
+	.cover-photo {
+		height: 550px;
+	}
+
+	.cover-photo-btn {
+		font-size: 30px;
+	}
+
+	.mySwiper {
+		width: 100%;
+		overflow: hidden;
+	}
+
+	.scrollable-container {
+		width: 100%;
+		/* Adjust width as needed */
+		overflow-x: auto;
+		/* Enable horizontal scrolling */
+		white-space: nowrap;
+		/* Prevent items from wrapping */
+		-webkit-overflow-scrolling: touch;
+		overflow-scrolling: touch;
+	}
+
+	.rowCard {
+		display: flex;
+		/* Use flexbox to align items horizontally */
+		padding: 10px;
+		/* Optional: Adjust padding as needed */
+		-webkit-overflow-scrolling: touch;
+		overflow-scrolling: touch;
+	}
+
+	.groomerDetails {
+		margin: 20px;
+	}
+
+
+
+	.grommerCard {
+		user-select: none;
+		min-width: 410px;
+		margin: 0 10px;
+		flex: 0 0 auto;
+	}
+
+	.rowCard::-webkit-scrollbar {
+		display: none;
+
+	}
+
+	.starGrommer-title {
+		text-align: left;
+	}
+}
+
+@media (max-width: 325px) {
+	.GrommingNum {
+		font-size: 17px;
+	}
+}
+
+
+/* Star Groomer - CSS over */
+
+/* FAQ - CSS */
+.faq_Q {
+	color: #6342A8 !important;
+	font-family: Poppins;
+	font-size: 16px !important;
+	font-weight: 500 !important;
+	line-height: 24px !important;
+	border-top-right-radius: 10px !important;
+	border-top-left-radius: 10px !important;
+}
+
+.faqAns {
+	/* padding-left: 30px; */
+	color: #1F1F1F;
+	font-family: Poppins;
+	font-weight: 400;
+	border-bottom-left-radius: 10px !important;
+	border-bottom-right-radius: 10px !important;
+}
+
+.accordion-header {
+	border-top-left-radius: 10px !important;
+	border-top-right-radius: 10px !important;
+}
+
+.accordion-item {
+	/* border: 1px solid red !important; */
+	border-radius: 10px !important;
+	border: 1px solid #B6A6E0 !important;
+	background-color: transparent !important;
+}
+
+.accordion-button::after {
+	display: none;
+}
+
+.accordion-button {
+	background-repeat: no-repeat;
+	/* background-position: right center;
+	padding-right: 20px !important; */
+	background-position: calc(100% - 20px) center;
+	background-size: 20px;
+	padding-right: 50px !important;
+}
+
+.accordion-button:not(.collapsed) {
+	background-image: url('../../assets/icons/closeQ.svg') !important;
+	/* color: #FAF8FF; */
+	background-color: transparent !important;
+	box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+
+.accordion-button.collapsed {
+	background-image: url('../../assets/icons/plusQ.svg') !important;
+}
+
+
+.faqAnsBody {
+	background-color: transparent !important;
+	border-bottom-left-radius: 10px !important;
+	border-bottom-right-radius: 10px !important;
+	padding: 0 !important;
+	/* font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529; */
+	color: #000;
+	text-align: center;
+	font-family: Poppins;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	/* line-height: 28px; */
+	line-height: 22px;
+}
+
+.accordion-button:focus {
+	outline: none !important;
+	box-shadow: none !important;
+}
+
+.accordion-item:first-of-type .accordion-button {
+	border-top-left-radius: 10px !important;
+	border-top-right-radius: 10px !important;
+}
+
+.accordion-item:last-of-type .accordion-button.collapsed {
+	border-bottom-right-radius: 10px !important;
+	border-bottom-left-radius: 10px !important;
+}
+
+.accordion-item:last-of-type .accordion-collapse {
+	border-bottom-right-radius: 10px !important;
+	border-bottom-left-radius: 10px !important;
+	border-top-left-radius: 10px !important;
+	border-top-right-radius: 10px !important;
+}
+
+.accordion {
+	--bs-accordion-border-width: 30px !important;
+	--bs-accordion-border-color: transparent !important;
+	--bs-accordion-bg: transparent !important;
+}
+
+.accordion-collapse {
+	margin-top: 0px !important;
+}
+
+/* FAQ - CSS over */
+
+
+/* DarpetNurturing Css */
+
+.nurturing-title {
+	color: #6342A8;
+	text-align: center;
+	font-family: Poppins;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 27px;
+}
+
+.nuturing-desc {
+	color: #000;
+	text-align: center;
+	font-family: Poppins;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	/* line-height: 28px; */
+	line-height: 22px;
+}
+
+.firstRowImg {
+	display: flex;
+	justify-content: space-between;
+}
+
+.top-2-img {
+	width: 49.4%;
+	object-fit: cover;
+	height: 100% !important;
+}
+
+.top-3-img {
+	width: 32.5%;
+	object-fit: cover;
+	height: 100% !important;
+}
+
+.ir-2 {
+	margin-top: 11px !important;
+}
+
+@media(max-width:767px) {
+	.ir-2 {
+		margin-top: 4px !important;
+	}
+}
+
+/* @media (min-width : 768px) {
+	.sec2Heading {
+		font-weight: 500 !important;
+	}
+
+	.sec4Heading {
+		font-weight: 500 !important;
+	}
+} */
+@media(max-width:600px) {
+	.img {
+		width: 50px !important;
+	}
+
+	.rightContent {
+		margin-top: 0rem !important;
+	}
+
+	.shampoImg {
+
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.img {
+	width: 80px;
+}
+
+.rightContent {
+	margin-top: 1rem;
+}
+
+.video-container {
+	position: relative;
+	width: 100%;
+}
+
+.play-button-container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	cursor: pointer;
+	z-index: 1;
+}
+
+.play-button {
+	color: #fff;
+	/* Change the color to match your design */
+	font-size: 24px;
+	/* Adjust the font size as needed */
+	text-align: center;
+	background: rgba(0, 0, 0, 0.5);
+	/* Add a semi-transparent background for better visibility */
+	padding: 10px 20px;
+	/* Adjust the padding as needed */
+	border-radius: 50%;
+	/* Add border-radius for rounded corners */
+}
+
+.play-button:hover {
+	background: rgba(0, 0, 0, 0.7);
+	/* Change the hover background color */
+}
+
+.fa-pause,
+.fa-play {
+	color: #fff;
+}
+
+@media(max-width:361px) {
+	.dearPetPlans {
+		font-size: 19px;
+	}
+}
+
+@media (min-width: 992px) {
+
+	.workcrd {
+		min-height: 150px;
+	}
+
+	.workImg {
+		width: 120px;
+	}
+
+	.howWorksContainer {
+		width: 98%;
+	}
+
+	.cover-photo {
+		height: 520px;
+	}
+
+	.whyChooesHeading {
+
+		font-size: 70px;
+		padding: 40px;
+	}
+
+
+
+	.why-choose-wrapper {
+		display: flex;
+		flex-direction: row;
+		margin-top: 20px;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 30px;
+
+	}
+
+	.why-choose-container {
+		position: relative;
+		width: 50%;
+		height: 100%;
+		margin-bottom: 0;
+		/* justify-content: center;
+		align-items: center; */
+	}
+
+	.shampoo-container {
+		padding: 40px;
+		width: 50%;
+
+	}
+
+
+	.shampoo-container-pc {
+		/* width: 50%; */
+		border: 1px solid;
+		padding: 40px;
+		/* Ensure the container takes the full width */
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 0;
+	}
+
+	.shampoImg {
+
+		border-radius: 10px;
+		object-fit: contain;
+		height: 600px;
+
+	}
+
+	.gallery-heading {
+
+		font-size: 30px;
+
+	}
+
+	.g-review {
+		font-size: 15px;
+	}
+
+	.sec4Heading {
+		font-size: 36px;
+		/* font-weight: 700; */
+	}
+
+
+	.dearPetPlans {
+		font-size: 30px;
+	}
+
+	.starGrommer-title {
+		font-size: 30px;
+	}
+
+	.nurturing-title {
+		font-size: 30px;
+	}
+
+	.sec5SubHeading {
+		font-size: 30px;
+	}
+
+
+
+	.planPrice {
+
+		font-family: Poppins;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 700;
+
+		margin: 0;
+	}
+
+	.planHeading {
+		font-family: Poppins;
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+
+	}
+}
+
+@media(min-width:1100px) {
+	.howWorksContainer {
+		width: 80%;
+	}
+
+	.cover-photo {
+		height: 550px;
+	}
+
+	.planBookNowBtn {
+		font-size: 21px;
+	}
+
+	.planHeading {
+		font-size: 24px;
+	}
+
+	.cover-photo-btn {
+		font-size: 32px;
+	}
+}
+
+@media(min-width:1400px) {
+
+
+	.howWorksContainer {
+		width: 75%;
+	}
+
+	.cover-photo {
+		height: 600px;
+	}
+
+	.cover-photo-btn {
+		font-size: 35px;
+	}
+
+	.planPrice {
+		font-size: 29px;
+	}
+
+	.planHeading {
+		font-size: 24px;
+	}
+
+	.planDescList {
+		line-height: 25px;
+	}
+
+	.cityGroomingWrapper {
+		width: 65%;
+	}
+
+	.bookingPlansWrapper {
+		width: 85%;
+	}
+}
+
+@media(min-width:1500px) {
+	.bookingPlansWrapper {
+		width: 80%;
+	}
+}
+
+@media(min-width:1600px) {
+	.bookingPlansWrapper {
+		width: 75%;
+	}
+}
+
+@media(min-width: 992px) and (max-width:1070px) {
+	.planDescList {
+		font-size: 14px;
+	}
+}
+
+
+
+
+/* new css for booking appointment button */
+
+/* General styles for the button */
+
+
+/* Booking button css  */

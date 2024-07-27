@@ -10,7 +10,7 @@ const Program = () => {
           alt=""
         />
         <div className="lg:text-[23px] text-blue font-extrabold">
-          +1 000 10 84 000
+        tel:+91-75999-75888
         </div>
       </div>
 
