@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { getBlogs, getTagList } from '../service/api';
 import './BlogListScreen.css';
 
 function BlogListScreen() {
     const navigate = useNavigate();
     const initialPage = parseInt(localStorage.getItem('currentPage')) || 1;
-    
+
     const [blogs, setBlogs] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
@@ -87,20 +87,24 @@ function BlogListScreen() {
                 <div className="blogs">
                     {blogs && blogs.map((blog, index) => (
                         <React.Fragment key={blog.id}>
-                            <div className="blog-card" onClick={() => handleBlogClick(blog.slug)}>
-                                <h2 className='blog-title'>{blog.title}</h2>
-                                {blog.cover && (
-                                    <div className="blog-cover-container">
-                                        <img src={blog.cover} alt={blog.title} className="blog-cover" />
-                                        <div class="overlay"></div>
-                                    </div>
-                                )}
-                                <span className='blog-by'>{`by ${blog.author_name} on ${new Date(blog.created_at).toLocaleDateString()}`}</span>
-                                <p className='blog-excerpt'>{blog.excerpt}</p>
-                                <button className="read-more-button" onClick={() => handleBlogClick(blog.slug)}>
-                                    Read More
-                                </button>
-                            </div>
+                            <Link to={`/blog/${blog.slug}`}>
+                                <div className="blog-card">
+                                    <h2 className='blog-title'>{blog.title}</h2>
+                                    {blog.cover && (
+                                        <div className="blog-cover-container">
+                                            <img src={blog.cover} alt={blog.title} className="blog-cover" />
+                                            <div class="overlay"></div>
+                                        </div>
+                                    )}
+                                    <span className='blog-by'>{`by ${blog.author_name} on ${new Date(blog.created_at).toLocaleDateString()}`}</span>
+                                    <p className='blog-excerpt'>{blog.excerpt}</p>
+                                    <Link to={`/blog/${blog.slug}`}>
+                                        <button className="read-more-button" >
+                                            Read More
+                                        </button>
+                                    </Link>
+                                </div>
+                            </Link>
                             {index !== blogs.length - 1 && (
                                 <div className="dividerBlog"></div>
                             )}
@@ -116,7 +120,7 @@ function BlogListScreen() {
                         >
                             Prev
                         </button>
-                        
+
                         {/* Page buttons */}
                         {Array.from({ length: totalPages }, (_, index) => (
                             <button
@@ -127,7 +131,7 @@ function BlogListScreen() {
                                 {index + 1}
                             </button>
                         ))}
-                        
+
                         {/* Next button */}
                         <button
                             className={`pagination-button ${currentPage === totalPages ? 'disabled' : ''}`}
@@ -156,14 +160,17 @@ function BlogListScreen() {
                     <div className="top-blogs">
                         <h2>Top Articles</h2>
                         {topBlogs && topBlogs.map((blog, index) => (
-                            <div key={blog.id} className="top-blog-card" onClick={() => handleBlogClick(blog.slug)}>
-                                <h3>{blog.title}</h3>
-                                <h5>{new Date(blog.created_at).toLocaleDateString()}</h5>
-                                {index !== topBlogs.length - 1 && (
-                                <div className="dividerBlog"></div>
-                            )}
-                            </div>
-                            
+                            <Link to={`/blog/${blog.slug}`}>
+
+                                <div key={blog.id} className="top-blog-card" >
+                                    <h3>{blog.title}</h3>
+                                    <h5>{new Date(blog.created_at).toLocaleDateString()}</h5>
+                                    {index !== topBlogs.length - 1 && (
+                                        <div className="dividerBlog"></div>
+                                    )}
+                                </div>
+                            </Link>
+
                         ))}
                     </div>
                     <div className="tag-cloud">
