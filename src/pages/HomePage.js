@@ -21,9 +21,8 @@ const HomePage = () => {
         <Header />
         <Hero />
         <Prices />
-        <Categories />
+        {/* <Categories /> */}
         <BlogListScreen />
-
         <ul>
           {categories.map((category) => (
             <li key={category.slug}>

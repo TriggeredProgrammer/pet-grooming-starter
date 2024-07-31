@@ -135,7 +135,7 @@ export const bundleData = [
     //   },
     // ],
   },
-
+  
   {
     id: 4,
     image: <DogCateg4 />,

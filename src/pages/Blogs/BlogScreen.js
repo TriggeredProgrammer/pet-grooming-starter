@@ -49,11 +49,11 @@ function BlogScreen() {
       <div className="back-link-container">
         <span
           className="back-link mx-2"
-          onClick={() => navigate("/blogs")}
+          onClick={() => navigate("/blog")}
           role="button"
           tabIndex={0}
           onKeyDown={(e) => {
-            if (e.key === "Enter") navigate("/blogs");
+            if (e.key === "Enter") navigate("/blog");
           }}
         >
           Blogs
